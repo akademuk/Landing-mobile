@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Myriad Pro";
+  src: url(../../fonts/MyriadPro-Regular.woff) format("woff"), url(../../fonts/MyriadPro-Regular.ttf) format("true-type"), url(../../fonts/) format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*font-family: 'Lato', sans-serif;*/
+/*font-family: 'Open Sans', sans-serif;*/
+/*font-family: 'Oswald', sans-serif;*/
+/*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Roboto', sans-serif;*/
+body {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  color: #ecf0f1;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+h1 span {
+  font-weight: 400;
+}
+
+h2 {
+  color: #161e26;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #161e26;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=style.css.map */

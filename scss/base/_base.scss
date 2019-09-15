@@ -1,0 +1,30 @@
+/*font-family: 'Lato', sans-serif;*/
+/*font-family: 'Open Sans', sans-serif;*/
+/*font-family: 'Oswald', sans-serif;*/
+/*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Roboto', sans-serif;*/
+body {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: $OpenSans;
+}
+h1 {
+  color: $azure;
+  font-size: 1.8rem;
+  font-weight: 700;
+  span {
+    font-weight: 400;
+  }
+}
+h2 {
+  color: $blackPearl;
+  font-family: $Oswald;
+  font-size: 2.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h3 {
+  color: $blackPearl;
+  font-family: $Poppins;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,27 @@
+{
+    "version": 3,
+    "mappings": "AEAA,UAAU;EACR,WAAW,EAAE,YAAY;EACzB,GAAG,EAAE,uCAAuC,CAAC,cAAc,EACzD,sCAAsC,CAAC,mBAAmB,EAC1D,iBAAiB,CAAC,kBAAkB;EACtC,WAAW,EAAE,GAAG;EAChB,UAAU,EAAE,MAAM;;;AENpB,oCAAoC;AACpC,yCAAyC;AACzC,sCAAsC;AACtC,uCAAuC;AACvC,sCAAsC;AACtC,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,WAAW,EDPF,WAAW,EAAE,UAAU;CCQjC;;AACD,AAAA,EAAE,CAAC;EACD,KAAK,EDIC,OAAO;ECHb,SAAS,EAAE,MAAM;EACjB,WAAW,EAAE,GAAG;CAIjB;;AAPD,AAIE,EAJA,CAIA,IAAI,CAAC;EACH,WAAW,EAAE,GAAG;CACjB;;AAEH,AAAA,EAAE,CAAC;EACD,KAAK,EDXM,OAAO;ECYlB,WAAW,EDlBJ,QAAQ,EAAE,UAAU;ECmB3B,SAAS,EAAE,MAAM;EACjB,WAAW,EAAE,GAAG;EAChB,cAAc,EAAE,SAAS;CAC1B;;AACD,AAAA,EAAE,CAAC;EACD,KAAK,EDlBM,OAAO;ECmBlB,WAAW,EDxBH,SAAS,EAAE,UAAU;ECyB7B,SAAS,EAAE,MAAM;CAClB",
+    "sources": [
+        "../scss/style.scss",
+        "../scss/base/_index.scss",
+        "../scss/base/_fonts.scss",
+        "../scss/base/_vars.scss",
+        "../scss/base/_base.scss",
+        "../scss/layout/_index.scss",
+        "../scss/layout/_header.scss",
+        "../scss/layout/_main.scss",
+        "../scss/layout/_footer.scss",
+        "../scss/modules/_index.scss",
+        "../scss/modules/_features.scss",
+        "../scss/modules/_music_section.scss",
+        "../scss/modules/_screenshots.scss",
+        "../scss/modules/_video.scss",
+        "../scss/modules/_first_ever_app.scss",
+        "../scss/modules/_testimonials.scss",
+        "../scss/modules/_who_we_are.scss",
+        "../scss/modules/_partners.scss",
+        "../scss/modules/_pricing.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
