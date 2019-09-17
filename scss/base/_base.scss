@@ -8,12 +8,17 @@ body {
   font-weight: 400;
   font-family: $OpenSans;
 }
+.wrapper {
+  max-width: 1114px;
+  margin: 0 auto;
+}
 h1 {
   color: $azure;
   font-size: 1.8rem;
   font-weight: 700;
   span {
     font-weight: 400;
+    margin-left: 5px;
   }
 }
 h2 {
