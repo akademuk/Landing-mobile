@@ -292,6 +292,7 @@
   }
   .header_bottom_container_img {
     opacity: 0.5;
+    max-width: 60%;
   }
 }
 @media (max-width: 576px) {
@@ -318,13 +319,13 @@
     padding: 0 !important;
   }
   .header_bottom_tittle_text {
-    margin: 50px 0 20px;
+    margin: 30px 0 20px;
     width: 100%;
     min-width: 100%;
     font-size: 1.5rem;
   }
   .header_bootom_container_text {
-    padding: 10px 15px;
+    padding: 10px 15px 75px;
     text-align: center;
     width: 100vw;
   }
@@ -336,12 +337,12 @@
     background-position: 5px center;
   }
   .header_bottom {
-    padding-bottom: 25px;
-    height: 80vh;
+    padding-bottom: 0;
+    height: auto;
+    background-size: inherit;
   }
   .header_bottom_container_img {
-    right: 10%;
-    max-width: 70%;
+    display: none;
   }
   .header_bottom_tittle_btn {
     justify-content: center;
@@ -349,7 +350,7 @@
 }
 @media (max-width: 335px) {
   .header_bottom_tittle_text {
-    margin: 40px 0 30px;
+    margin: 100px 0 105px;
     font-size: 1.2rem;
   }
   .header_bottom_tittle_android,
@@ -358,7 +359,7 @@
     padding: 3px 10px 3px 20px;
   }
   .header_bottom_container_img {
-    max-width: 100%;
-    right: 0;
+    max-width: 50%;
+    right: 20%;
   }
 }
