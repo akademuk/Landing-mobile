@@ -1,4 +1,4 @@
-/*FEATURES start*/
+/*---------------------FEATURES start----------------------------*/
 .features {
   text-align: center;
   padding-bottom: 57px;
@@ -94,7 +94,7 @@
 
 @media (max-width: 576px) {
   .features_container {
-    flex-direction: column;
+    flex-direction: row;
   }
   .features_container_right,
   .features_container_left {
@@ -110,4 +110,10 @@
     }
   }
 }
-/*FEATURES end*/
+@media (max-width: 450px) {
+  .features_container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/*----------------------------FEATURES end---------------------------*/

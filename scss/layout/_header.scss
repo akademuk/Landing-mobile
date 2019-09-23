@@ -261,8 +261,13 @@
   .collapse {
     display: none;
   }
-  .navbar-nav {
-    max-height: 100vh;
+  .navbar {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    background: url(../../images/banner_header.png);
+    background-size: initial;
+    background-repeat: no-repeat;
   }
   .header_bottom_logotype {
     width: 100%;
