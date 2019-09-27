@@ -864,7 +864,7 @@ hr {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .screenshots_container {
     height: 100vh;
     -ms-flex-wrap: wrap;
