@@ -850,8 +850,8 @@ hr {
   left: 0;
   display: block;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 @media (max-width: 1200px) {
