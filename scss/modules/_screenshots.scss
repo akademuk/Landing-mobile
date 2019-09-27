@@ -48,6 +48,12 @@
   .screenshots_img {
     margin-right: 3px;
     padding: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    object-fit: cover;
   }
 }
 @media (max-width: 1200px) {
@@ -63,12 +69,14 @@
 }
 @media (max-width: 576px) {
   .screenshots_container {
+    height: 100vh;
     flex-wrap: wrap;
     justify-content: left;
     .d-flex {
       margin: 0;
       &:nth-of-type(1) {
         max-width: 49%;
+        height: 60vh;
         .d-flex {
           max-width: 100%;
           height: 40%;
@@ -84,6 +92,7 @@
       &:nth-of-type(2) {
         flex-direction: row;
         margin-top: 3px;
+        height: 40vh;
         .screenshots_img {
           width: 50% !important;
           height: 100% !important;
@@ -92,6 +101,7 @@
     }
     .screenshots_img {
       max-width: 49%;
+      height: 60vh;
     }
   }
   .screenshots {

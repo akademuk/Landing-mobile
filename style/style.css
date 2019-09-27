@@ -56,14 +56,6 @@ hr {
   margin: 5px 0 26px 0;
 }
 
-img {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-}
-
 @media (max-width: 576px) {
   h2 {
     font-size: 1.5rem;
@@ -279,7 +271,6 @@ img {
   position: absolute;
   top: 10%;
   right: 12%;
-  left: auto;
 }
 
 .navbar-light .navbar-nav {
@@ -854,6 +845,13 @@ img {
 .screenshots_container .screenshots_img {
   margin-right: 3px;
   padding: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 1200px) {
@@ -868,6 +866,7 @@ img {
 
 @media (max-width: 576px) {
   .screenshots_container {
+    height: 100vh;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: left;
@@ -879,6 +878,7 @@ img {
   }
   .screenshots_container .d-flex:nth-of-type(1) {
     max-width: 49%;
+    height: 60vh;
   }
   .screenshots_container .d-flex:nth-of-type(1) .d-flex {
     max-width: 100%;
@@ -897,6 +897,7 @@ img {
         -ms-flex-direction: row;
             flex-direction: row;
     margin-top: 3px;
+    height: 40vh;
   }
   .screenshots_container .d-flex:nth-of-type(2) .screenshots_img {
     width: 50% !important;
@@ -904,6 +905,7 @@ img {
   }
   .screenshots_container .screenshots_img {
     max-width: 49%;
+    height: 60vh;
   }
   .screenshots {
     padding: 30px 0;
