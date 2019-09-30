@@ -633,10 +633,10 @@ hr {
 
 @media (max-width: 576px) {
   .features_container {
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .features_container_right,
   .features_container_left {
@@ -645,6 +645,7 @@ hr {
         -ms-flex-direction: row;
             flex-direction: row;
     width: 100%;
+    min-width: 100%;
   }
   .features_container_center_img {
     top: 100%;

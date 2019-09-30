@@ -94,12 +94,13 @@
 
 @media (max-width: 576px) {
   .features_container {
-    flex-direction: row;
+    flex-direction: column;
   }
   .features_container_right,
   .features_container_left {
     flex-direction: row;
     width: 100%;
+    min-width: 100%;
   }
   .features_container_center_img {
     top: 100%;
