@@ -324,7 +324,7 @@
     padding: 0 !important;
   }
   .header_bottom_tittle_text {
-    margin: 30px 0 20px;
+    margin: 30px 0 50px;
     width: 100%;
     min-width: 100%;
     font-size: 1.5rem;
@@ -355,13 +355,14 @@
 }
 @media (max-width: 335px) {
   .header_bottom_tittle_text {
-    margin: 100px 0 105px;
+    margin: 70px 0 30px;
     font-size: 1.2rem;
   }
   .header_bottom_tittle_android,
   .header_bottom_tittle_ios {
     font-size: 0.5rem;
-    padding: 3px 10px 3px 20px;
+    padding: 10px 10px 10px 20px;
+    width: 50%;
   }
   .header_bottom_container_img {
     max-width: 50%;
