@@ -646,6 +646,7 @@ hr {
             flex-direction: row;
     width: 100%;
     min-width: 100%;
+    padding: 0;
   }
   .features_container_center_img {
     top: 100%;
@@ -659,6 +660,7 @@ hr {
   .features_container_right_bottom,
   .features_container_right_top {
     width: 45%;
+    padding: 5px;
   }
   .features_container_left_bottom,
   .features_container_right_bottom {
