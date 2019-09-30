@@ -790,9 +790,9 @@ hr {
   left: 0;
   display: block;
   width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .screenshots_container {
@@ -839,10 +839,11 @@ hr {
 
 .screenshots_container_right .screenshots_container_img:nth-of-type(1) {
   margin-bottom: 3px;
+  height: 50%;
 }
 
 .screenshots_container_right .screenshots_container_img:nth-of-type(2) {
-  height: 50%;
+  height: 49%;
 }
 
 .screenshots_container_left .screenshots_container_img {

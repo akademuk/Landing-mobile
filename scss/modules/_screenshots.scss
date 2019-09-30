@@ -8,8 +8,8 @@
   left: 0;
   display: block;
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 100%;
+  object-fit: fill;
 }
 .screenshots_container {
   height: 100%;
@@ -43,9 +43,10 @@
   .screenshots_container_img {
     &:nth-of-type(1) {
       margin-bottom: 3px;
+      height: 50%;
     }
     &:nth-of-type(2) {
-      height: 50%;
+      height: 49%;
     }
   }
 }
