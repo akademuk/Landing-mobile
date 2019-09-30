@@ -796,9 +796,8 @@ hr {
 }
 
 .screenshots_container {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100%;
+  max-height: 528px;
   border: 1px solid red;
   overflow: hidden;
 }

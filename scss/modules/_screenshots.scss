@@ -12,7 +12,8 @@
   object-fit: cover;
 }
 .screenshots_container {
-  height: fit-content;
+  height: 100%;
+  max-height: 528px;
   border: 1px solid red;
   overflow: hidden;
 }
