@@ -920,11 +920,11 @@ hr {
 }
 
 video {
-  height: auto;
+  height: inherit;
   margin-right: 28px;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 60%;
+  width: 100%;
 }
 
 #video_player video,
@@ -1005,7 +1005,48 @@ video {
   font-family: "Roboto", sans-serif;
   line-height: normal;
   font-size: 1rem;
-  word-wrap: break-word;
+}
+
+.con_video {
+  position: relative;
+  margin-right: 28px;
+  width: 60%;
+  height: 100%;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+.video_playlist_information {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #004058;
+  opacity: 0;
+  padding: 32px 0 14px 43px;
+}
+
+.video_playlist_information .video_playlist_information_tittle {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+
+.video_playlist_information .video_playlist_information_text {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  line-height: normal;
+  font-size: 1rem;
+}
+
+.con_video {
+  cursor: pointer;
+}
+
+.con_video:hover .video_playlist_information {
+  opacity: 0.85;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
 }
 
 @media (max-width: 1200px) {
@@ -1046,6 +1087,9 @@ video {
     width: 100%;
     height: inherit;
     margin-bottom: 25px;
+  }
+  .con_video {
+    width: 100%;
   }
   #video_player {
     -webkit-box-orient: vertical;
@@ -1088,6 +1132,133 @@ video {
   }
   .video_container .wrapper h2 {
     margin-bottom: 25px;
+  }
+}
+
+.first_ever_app {
+  padding: 50px 0 57px;
+}
+
+.first_ever_app .wrapper h2 {
+  margin-bottom: 59px;
+}
+
+.first_ever_app .wrapper .container .row {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.first_ever_app_container {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.first_ever_app_container:nth-of-type(2) {
+  position: relative;
+}
+
+.first_ever_app_container:nth-of-type(2):before {
+  content: "";
+  display: block;
+  width: 167px;
+  height: 1px;
+  background-color: #8c9094;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  left: -50%;
+  bottom: 40%;
+}
+
+.first_ever_app_container:nth-of-type(2):after {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 167px;
+  height: 1px;
+  background-color: #8c9094;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  right: -50%;
+  bottom: 40%;
+}
+
+.first_ever_app_container_img {
+  background: url(../../images/hexagon.png);
+  width: 84px;
+  height: 97px;
+  margin: 0 auto;
+  line-height: 93px;
+  margin-bottom: 35px;
+}
+
+.first_ever_app_container_img img {
+  text-align: center;
+  line-height: 97px;
+}
+
+.first_ever_app_container_text_tittle {
+  color: #161e26;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+
+.first_ever_app_container_text_tittle::after {
+  content: "";
+  width: 70px;
+  height: 1px;
+  display: block;
+  background: #000;
+  margin: 10px auto 20px;
+}
+
+.first_ever_app_container_text_tittle_text {
+  color: #6c8784;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+@media (max-width: 992px) {
+  .first_ever_app .wrapper .container {
+    max-width: 100%;
+  }
+  .first_ever_app_container:nth-of-type(2):before {
+    bottom: 34%;
+  }
+  .first_ever_app_container:nth-of-type(2):after {
+    bottom: 34%;
+  }
+  .first_ever_app_container_text_tittle_text {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .first_ever_app_container:nth-of-type(2):before {
+    display: none;
+  }
+  .first_ever_app_container:nth-of-type(2):after {
+    display: none;
+  }
+  .first_ever_app_container_text_tittle {
+    font-size: 1rem;
+  }
+  .first_ever_app_container_img {
+    margin-bottom: 15px;
+  }
+  .first_ever_app_container {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .first_ever_app .wrapper .container .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=style.css.map */
