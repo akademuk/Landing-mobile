@@ -5,8 +5,10 @@
 video {
   height: inherit;
   margin-right: 28px;
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
+  position: relative;
+  outline: none;
 }
 #video_player video,
 #video_player figcaption {
@@ -44,6 +46,10 @@ video {
 }
 .video_playlist {
   height: 100%;
+  &:hover {
+    cursor: pointer;
+    background-color: #293d51;
+  }
 }
 .video_playlist_description {
   width: 100%;
@@ -69,7 +75,7 @@ video {
   position: relative;
   margin-right: 28px;
   width: 60%;
-  height: 100%;
+  height: auto;
   transition: all 1s ease-in;
 }
 .video_playlist_information {
@@ -183,6 +189,16 @@ video {
       h2 {
         margin-bottom: 25px;
       }
+    }
+  }
+  .video_playlist_information {
+    padding: 5px 0 0 10px;
+    .video_playlist_information_tittle {
+      font-size: 0.8rem;
+      margin-bottom: 8px;
+    }
+    .video_playlist_information_text {
+      font-size: 0.6rem;
     }
   }
 }
