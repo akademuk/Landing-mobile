@@ -1600,7 +1600,7 @@ video {
 
 @media (max-width: 576px) {
   .our_partners {
-    padding-bottom: 0;
+    padding-bottom: 10px;
   }
   .our_partners .wrapper .container {
     -webkit-box-orient: vertical;
