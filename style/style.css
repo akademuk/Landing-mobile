@@ -1543,8 +1543,21 @@ video {
   .who_are_container_specialty {
     font-size: 0.6rem;
   }
+  .who_are_container {
+    margin-bottom: 20px;
+  }
   .who_are_container img {
+    width: auto;
     margin-bottom: 10px;
+  }
+  .who_are {
+    padding-bottom: 0;
+  }
+  .who_are .wrapper .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
