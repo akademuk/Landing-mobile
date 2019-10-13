@@ -29,3 +29,22 @@
     }
   }
 }
+@media (max-width: 576px) {
+  .our_partners {
+    padding-bottom: 0;
+    .wrapper {
+      .container {
+        flex-direction: column;
+      }
+    }
+  }
+  .our_partners_link {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .our_partners_img {
+    width: 50%;
+  }
+}
