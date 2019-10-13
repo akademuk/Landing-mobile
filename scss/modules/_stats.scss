@@ -1,7 +1,7 @@
 .stats {
   background: url(../images/first_banner.png);
   width: 100%;
-  padding: 52px 0 50px;
+  padding: 36px 0 35px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -41,6 +41,7 @@
 @media (max-width: 768px) {
   .stats_container_tittle {
     font-size: 2.1rem;
+    margin-bottom: 5px;
   }
   .stats_container_text {
     font-size: 1rem;
@@ -56,6 +57,10 @@
     &:nth-of-type(1),
     &:nth-of-type(2) {
       border-bottom: 1px solid $white;
+    }
+    &:nth-of-type(3),
+    &:nth-of-type(4) {
+      padding-top: 10px;
     }
   }
 }
