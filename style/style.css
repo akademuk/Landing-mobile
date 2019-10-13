@@ -1561,6 +1561,43 @@ video {
   }
 }
 
+.our_partners {
+  padding: 57px 0 60px;
+  background: #eee;
+}
+
+.our_partners .wrapper .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our_partners_link {
+  max-width: 20%;
+  cursor: pointer;
+}
+
+.our_partners_img {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .our_partners {
+    padding: 20px 0;
+  }
+  .our_partners .wrapper h2 {
+    margin-bottom: 20px;
+  }
+  .our_partners .wrapper .container {
+    max-width: 100%;
+  }
+}
+
 .stats {
   background: url(../images/first_banner.png);
   width: 100%;

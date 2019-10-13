@@ -1,0 +1,31 @@
+.our_partners {
+  padding: 57px 0 60px;
+  background: $whisper;
+  .wrapper {
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
+.our_partners_link {
+  max-width: 20%;
+  cursor: pointer;
+}
+.our_partners_img {
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  .our_partners {
+    padding: 20px 0;
+    .wrapper {
+      h2 {
+        margin-bottom: 20px;
+      }
+      .container {
+        max-width: 100%;
+      }
+    }
+  }
+}
