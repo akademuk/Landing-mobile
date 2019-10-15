@@ -986,6 +986,7 @@ video {
 
 .video_playlist {
   height: 100%;
+  position: relative;
 }
 
 .video_playlist:hover {
@@ -1491,6 +1492,11 @@ video {
   color: #6c8784;
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.who_are_container_link {
+  margin-top: 20px;
 }
 
 .who_are_container_link a {
@@ -1631,6 +1637,10 @@ video {
 
 .pricing {
   padding: 54px 0 61px;
+}
+
+.pricing .wrapper h2 {
+  margin-bottom: 80px;
 }
 
 .pricing .wrapper .container {

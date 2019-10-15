@@ -46,6 +46,7 @@ video {
 }
 .video_playlist {
   height: 100%;
+  position: relative;
   &:hover {
     cursor: pointer;
     background-color: #293d51;
