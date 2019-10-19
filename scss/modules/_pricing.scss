@@ -136,6 +136,13 @@ sup {
   }
 }
 @media (max-width: 576px) {
+  .pricing {
+    .wrapper {
+      h2 {
+        margin-bottom: 40px;
+      }
+    }
+  }
   .pricing_container_price_sum {
     font-size: 1.5rem;
   }
@@ -152,13 +159,15 @@ sup {
     font-size: 0.6rem;
   }
   .pricing_container_price {
-    height: 90px;
+    height: 70px;
   }
   .pricing_container_tittle {
     margin-top: 20px;
+    margin-bottom: 10px;
   }
   .pricing_container_item {
     font-size: 0.7rem;
+    padding: 10px 0 10px;
   }
   .btn_sign {
     font-size: 0.7rem;
