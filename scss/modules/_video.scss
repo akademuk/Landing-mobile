@@ -206,11 +206,30 @@ video {
 @media (orientation: landscape) {
   #video_player {
     flex-direction: row;
+    height: 80vh;
     figcaption {
       width: 60%;
+      max-height: 100%;
     }
   }
+  .video_container {
+    padding-bottom: 10px;
+    height: 100vh;
+    .wrapper {
+      h2 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  video {
+    margin-bottom: 0;
+    height: 100%;
+  }
+  video[poster] {
+    object-fit: cover;
+  }
   .video_playlist {
+    max-height: 75px;
     a {
       img {
         height: 55% !important;

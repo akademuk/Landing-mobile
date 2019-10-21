@@ -1628,9 +1628,29 @@ video {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    height: 80vh;
   }
   #video_player figcaption {
     width: 60%;
+    max-height: 100%;
+  }
+  .video_container {
+    padding-bottom: 10px;
+    height: 100vh;
+  }
+  .video_container .wrapper h2 {
+    margin-bottom: 10px;
+  }
+  video {
+    margin-bottom: 0;
+    height: 100%;
+  }
+  video[poster] {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .video_playlist {
+    max-height: 75px;
   }
   .video_playlist a img {
     height: 55% !important;
