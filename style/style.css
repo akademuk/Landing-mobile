@@ -1616,7 +1616,7 @@ video {
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
   #video_player {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1829,8 +1829,8 @@ video {
 }
 
 .carousel-item_container img {
-  width: 120px;
-  height: 120px;
+  width: auto;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2269,10 +2269,8 @@ video {
   background: url(../images/Shape_8.png);
   width: 100%;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background-size: 100%;
   height: 194px;
-  margin-top: -13px;
 }
 
 .pricing_container:hover .pricing_container_top {
@@ -2298,7 +2296,7 @@ video {
   background: url(../images/Shape_7.png);
   width: 100%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
   -webkit-transition: all 1s;
   transition: all 1s;
   height: 136px;
@@ -2404,6 +2402,7 @@ sup {
   }
   .pricing_container_price_month {
     font-size: 0.4rem;
+    margin-top: 0;
   }
   .pricing_container_price {
     height: 45px;
@@ -2435,7 +2434,7 @@ sup {
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
   .pricing {
     padding: 20px 0;
   }

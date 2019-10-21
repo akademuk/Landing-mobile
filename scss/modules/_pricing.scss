@@ -27,10 +27,8 @@
       background: url(../images/Shape_8.png);
       width: 100%;
       background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
+      background-size: 100%;
       height: 194px;
-      margin-top: -13px;
     }
     .pricing_container_top {
       background-image: linear-gradient(
@@ -56,7 +54,7 @@
   background: url(../images/Shape_7.png);
   width: 100%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
   transition: all 1s;
   height: 136px;
 }
@@ -161,6 +159,7 @@ sup {
   }
   .pricing_container_price_month {
     font-size: 0.4rem;
+    margin-top: 0;
   }
   .pricing_container_price {
     height: 45px;
@@ -192,7 +191,7 @@ sup {
     }
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
   .pricing {
     padding: 20px 0;
     .wrapper {
