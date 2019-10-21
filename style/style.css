@@ -1353,10 +1353,12 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 87%;
   }
   .screenshots_container_right .screenshots_container_img {
     width: 100% !important;
+  }
+  .screenshots_container_right .screenshots_container_img:nth-of-type(1) {
+    height: 50% !important;
   }
   .screenshots_container_center_top {
     height: auto;
@@ -1365,7 +1367,7 @@ p {
     height: 50%;
   }
   .screenshots_container_left .screenshots_container_img {
-    height: 87%;
+    height: 100%;
   }
 }
 
