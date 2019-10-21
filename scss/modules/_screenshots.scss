@@ -98,31 +98,44 @@
   }
 }
 @media (orientation: landscape) {
+  .screenshots {
+    .wrapper {
+      .container {
+        padding: 0;
+      }
+    }
+  }
   .screenshots_container {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    min-width: 100%;
+    margin: 0;
     height: 75vh;
   }
   .screenshots_container_left,
   .screenshots_container_center,
   .screenshots_container_right {
     max-width: 33%;
+    height: 100%;
   }
   .screenshots_container_right {
     flex-direction: column;
+    padding-right: 0;
     .screenshots_container_img {
       width: 100% !important;
       &:nth-of-type(1) {
-        height: 50% !important;
+        height: 60% !important;
+      }
+      &:nth-of-type(2) {
+        height: 40% !important;
       }
     }
   }
   .screenshots_container_center_top {
-    height: auto;
+    height: 50%;
   }
   .screenshots_container_center_bottom {
-    height: 100%;
+    height: 50%;
   }
   .screenshots_container_left {
     .screenshots_container_img {
