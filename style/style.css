@@ -553,7 +553,7 @@ p {
   }
 }
 
-@media (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
   .header_bottom_tittle_btn {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1304,6 +1304,9 @@ p {
 }
 
 @media (max-width: 576px) {
+  .screenshots {
+    padding-bottom: 0;
+  }
   .screenshots_container_right {
     width: 100%;
     display: -webkit-box;
@@ -1331,7 +1334,7 @@ p {
   }
 }
 
-@media (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
   .screenshots .wrapper .container {
     padding: 0;
   }
@@ -1438,12 +1441,13 @@ video {
   display: flex;
   padding: 10px;
   text-decoration: none;
-  height: 126px;
+  max-height: 126px;
+  margin-bottom: 10px;
 }
 
 #video_player figcaption a img {
   max-width: 40%;
-  height: 100%;
+  height: inherit;
   -o-object-fit: cover;
      object-fit: cover;
   border: 1px solid #fff;
@@ -1547,18 +1551,6 @@ video {
   }
 }
 
-@media (max-width: 992px) {
-  .video_playlist_description {
-    padding: 0 0 10px 10px;
-  }
-  .video_playlist_description_text {
-    font-size: 0.7rem;
-  }
-  .video_playlist a img {
-    height: 75% !important;
-  }
-}
-
 @media (max-width: 768px) {
   video {
     width: 100%;
@@ -1578,13 +1570,15 @@ video {
   }
   #video_player figcaption {
     padding: 10px 0;
-    max-height: 45vh;
+    max-height: 21vh;
     width: 100%;
     overflow-y: scroll;
     overflow-x: inherit;
   }
   #video_player figcaption a {
+    max-height: 70px;
     padding: 0 10px !important;
+    margin-bottom: 15px;
   }
   .video_playlist a {
     height: 100px !important;
@@ -1622,7 +1616,7 @@ video {
   }
 }
 
-@media (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
   #video_player {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1759,6 +1753,12 @@ video {
 }
 
 @media (max-width: 768px) {
+  .first_ever_app .wrapper h2 {
+    margin-bottom: 15px;
+  }
+  .first_ever_app_container {
+    margin-bottom: 15px;
+  }
   .first_ever_app_container:nth-of-type(2):before {
     display: none;
   }
@@ -1785,7 +1785,7 @@ video {
   }
 }
 
-@media (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
   .first_ever_app .wrapper .container .row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1949,6 +1949,8 @@ video {
   }
   .carousel-item_container img {
     margin: 15px 0 15px 0;
+    width: 75px;
+    height: 75px;
   }
   .carousel-inner::before {
     top: 50%;
@@ -1959,9 +1961,18 @@ video {
   .carousel-indicators {
     bottom: -15%;
   }
+  .carousel-item_text_block_text {
+    margin-bottom: 15px;
+  }
+  .carousel-item_text_block {
+    margin-top: 0;
+  }
+  .section_carousel {
+    padding-bottom: 50px;
+  }
 }
 
-@media (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
   .carousel-inner {
     height: 70vh;
   }
@@ -2105,11 +2116,11 @@ video {
     margin-bottom: 20px;
   }
   .who_are_container img {
-    width: auto;
+    width: 60%;
     margin-bottom: 10px;
   }
   .who_are {
-    padding-bottom: 0;
+    padding: 20px 0;
   }
   .who_are .wrapper .container {
     -webkit-box-orient: vertical;
@@ -2125,7 +2136,7 @@ video {
   }
 }
 
-@media (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
   .who_are {
     height: 100vh;
     padding-top: 15px;
@@ -2187,13 +2198,11 @@ video {
     padding-bottom: 10px;
   }
   .our_partners .wrapper .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .our_partners_link {
-    max-width: 100%;
+    max-width: 45%;
     width: 100%;
     margin-bottom: 25px;
     text-align: center;
@@ -2203,7 +2212,7 @@ video {
   }
 }
 
-@media (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
   .our_partners .wrapper .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2263,7 +2272,7 @@ video {
   background-size: contain;
   background-position: center;
   height: 194px;
-  margin-top: -3px;
+  margin-top: -13px;
 }
 
 .pricing_container:hover .pricing_container_top {
@@ -2290,10 +2299,8 @@ video {
   width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
   -webkit-transition: all 1s;
   transition: all 1s;
-  margin-top: -3px;
   height: 136px;
 }
 
@@ -2316,7 +2323,7 @@ sup {
 .pricing_container_price_month {
   font-size: 1.1rem;
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-top: -16px;
 }
 
 .pricing_container_tittle {
@@ -2374,29 +2381,35 @@ sup {
 }
 
 @media (max-width: 576px) {
+  .pricing_container {
+    padding-bottom: 20px;
+  }
+  .pricing {
+    padding: 20px 0;
+  }
   .pricing .wrapper h2 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .pricing_container_price_sum {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   sup {
     top: -0.7em;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     margin-right: 5px;
   }
   .pricing_container_top {
-    padding: 10px 0;
+    padding: 5px 0;
     font-size: 0.8rem;
   }
   .pricing_container_price_month {
-    font-size: 0.6rem;
+    font-size: 0.4rem;
   }
   .pricing_container_price {
-    height: 70px;
+    height: 45px;
   }
   .pricing_container_tittle {
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 10px;
   }
   .pricing_container_item {
@@ -2407,21 +2420,22 @@ sup {
     font-size: 0.7rem;
     padding: 5px 10px;
   }
-  .pricing_container {
-    padding-bottom: 10px;
-  }
   .pricing_container:hover {
-    margin-top: -30px;
-  }
-  .pricing_container:hover .pricing_container_price_sum {
-    font-size: 1.5rem;
+    margin-top: 0;
   }
   .pricing_container:hover .pricing_container_price {
-    height: 120px;
+    height: 45px;
+    margin-top: 2px !important;
+    padding-bottom: 0;
+  }
+  .pricing_container:hover .pricing_container_price_sum {
+    font-size: 1rem;
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
 }
 
-@media (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
   .pricing {
     padding: 20px 0;
   }
@@ -2516,6 +2530,7 @@ sup {
   }
   .stats_container:nth-of-type(1), .stats_container:nth-of-type(2) {
     border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
   }
   .stats_container:nth-of-type(2) {
     border-right: none;
@@ -2534,7 +2549,7 @@ sup {
   }
 }
 
-@media (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
   .stats_container:nth-of-type(1), .stats_container:nth-of-type(2) {
     padding-bottom: 10px;
   }

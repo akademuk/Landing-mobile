@@ -130,6 +130,8 @@
   .carousel-item_container {
     img {
       margin: 15px 0 15px 0;
+      width: 75px;
+      height: 75px;
     }
   }
   .carousel-inner {
@@ -147,8 +149,17 @@
   .carousel-indicators {
     bottom: -15%;
   }
+  .carousel-item_text_block_text {
+    margin-bottom: 15px;
+  }
+  .carousel-item_text_block {
+    margin-top: 0;
+  }
+  .section_carousel {
+    padding-bottom: 50px;
+  }
 }
-@media (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
   .carousel-inner {
     height: 70vh;
   }

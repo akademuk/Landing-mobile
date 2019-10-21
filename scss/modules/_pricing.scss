@@ -30,7 +30,7 @@
       background-size: contain;
       background-position: center;
       height: 194px;
-      margin-top: -3px;
+      margin-top: -13px;
     }
     .pricing_container_top {
       background-image: linear-gradient(
@@ -57,9 +57,7 @@
   width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
   transition: all 1s;
-  margin-top: -3px;
   height: 136px;
 }
 .pricing_container_price_sum {
@@ -78,7 +76,7 @@ sup {
 .pricing_container_price_month {
   font-size: 1.1rem;
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-top: -16px;
 }
 .pricing_container_tittle {
   padding: 0 6px;
@@ -138,33 +136,37 @@ sup {
   }
 }
 @media (max-width: 576px) {
+  .pricing_container {
+    padding-bottom: 20px;
+  }
   .pricing {
+    padding: 20px 0;
     .wrapper {
       h2 {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
       }
     }
   }
   .pricing_container_price_sum {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   sup {
     top: -0.7em;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     margin-right: 5px;
   }
   .pricing_container_top {
-    padding: 10px 0;
+    padding: 5px 0;
     font-size: 0.8rem;
   }
   .pricing_container_price_month {
-    font-size: 0.6rem;
+    font-size: 0.4rem;
   }
   .pricing_container_price {
-    height: 70px;
+    height: 45px;
   }
   .pricing_container_tittle {
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 10px;
   }
   .pricing_container_item {
@@ -176,19 +178,21 @@ sup {
     padding: 5px 10px;
   }
   .pricing_container {
-    padding-bottom: 10px;
     &:hover {
-      margin-top: -30px;
-      .pricing_container_price_sum {
-        font-size: 1.5rem;
-      }
+      margin-top: 0;
       .pricing_container_price {
-        height: 120px;
+        height: 45px;
+        margin-top: 2px !important;
+        padding-bottom: 0;
+      }
+      .pricing_container_price_sum {
+        font-size: 1rem;
+        transition: all 1s;
       }
     }
   }
 }
-@media (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
   .pricing {
     padding: 20px 0;
     .wrapper {

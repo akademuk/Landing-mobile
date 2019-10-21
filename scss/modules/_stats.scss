@@ -57,6 +57,7 @@
     &:nth-of-type(1),
     &:nth-of-type(2) {
       border-bottom: 1px solid $white;
+      padding-bottom: 10px;
     }
     &:nth-of-type(2) {
       border-right: none;
@@ -75,7 +76,7 @@
     font-size: 0.8rem;
   }
 }
-@media (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
   .stats_container {
     &:nth-of-type(1),
     &:nth-of-type(2) {
