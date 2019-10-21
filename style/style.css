@@ -553,7 +553,7 @@ p {
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
   .header_bottom_tittle_btn {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1334,7 +1334,7 @@ p {
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
   .screenshots .wrapper .container {
     padding: 0;
   }
@@ -1785,7 +1785,7 @@ video {
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
   .first_ever_app .wrapper .container .row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1972,7 +1972,7 @@ video {
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
   .carousel-inner {
     height: 70vh;
   }
@@ -2136,7 +2136,7 @@ video {
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
   .who_are {
     height: 100vh;
     padding-top: 15px;
@@ -2212,7 +2212,7 @@ video {
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
   .our_partners .wrapper .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2548,7 +2548,7 @@ sup {
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
   .stats_container:nth-of-type(1), .stats_container:nth-of-type(2) {
     padding-bottom: 10px;
   }
