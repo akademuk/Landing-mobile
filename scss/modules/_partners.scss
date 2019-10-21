@@ -48,3 +48,17 @@
     width: 50%;
   }
 }
+@media (orientation: landscape) {
+  .our_partners {
+    .wrapper {
+      .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+  }
+  .our_partners_link {
+    max-width: 49%;
+    margin-bottom: 25px;
+  }
+}

@@ -27,9 +27,10 @@
       background: url(../images/Shape_8.png);
       width: 100%;
       background-repeat: no-repeat;
-      background-size: 100% 100%;
+      background-size: contain;
       background-position: center;
       height: 194px;
+      margin-top: -3px;
     }
     .pricing_container_top {
       background-image: linear-gradient(
@@ -55,9 +56,10 @@
   background: url(../images/Shape_7.png);
   width: 100%;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: contain;
   background-position: center;
   transition: all 1s;
+  margin-top: -3px;
   height: 136px;
 }
 .pricing_container_price_sum {
@@ -182,6 +184,32 @@ sup {
       }
       .pricing_container_price {
         height: 120px;
+      }
+    }
+  }
+}
+@media (orientation: landscape) {
+  .pricing {
+    padding: 20px 0;
+    .wrapper {
+      h2 {
+        margin-bottom: 10px;
+      }
+      .container {
+        height: 80vh;
+      }
+    }
+  }
+  .pricing_container_tittle {
+    margin-top: 0;
+  }
+  .pricing_container {
+    &:hover {
+      margin-top: 0;
+      .pricing_container_price {
+        height: 70px;
+        margin-top: 2px !important;
+        padding-bottom: 0;
       }
     }
   }

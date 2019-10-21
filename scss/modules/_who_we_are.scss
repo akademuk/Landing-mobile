@@ -115,3 +115,23 @@
     }
   }
 }
+@media (orientation: landscape) {
+  .who_are {
+    height: 100vh;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    .wrapper {
+      .container {
+        flex-direction: row;
+      }
+    }
+  }
+  .who_are_container {
+    max-width: 33%;
+  }
+  .who_are_container {
+    img {
+      width: inherit;
+    }
+  }
+}

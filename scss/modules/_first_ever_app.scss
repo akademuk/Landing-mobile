@@ -124,3 +124,17 @@
     }
   }
 }
+@media (orientation: landscape) {
+  .first_ever_app {
+    .wrapper {
+      .container {
+        .row {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+  .first_ever_app_container {
+    max-width: 45%;
+  }
+}
