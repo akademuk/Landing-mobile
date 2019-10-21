@@ -203,3 +203,18 @@ video {
     }
   }
 }
+@media (orientation: landscape) {
+  #video_player {
+    flex-direction: row;
+    figcaption {
+      width: 60%;
+    }
+  }
+  .video_playlist {
+    a {
+      img {
+        height: 55% !important;
+      }
+    }
+  }
+}

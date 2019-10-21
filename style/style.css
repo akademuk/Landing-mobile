@@ -1346,6 +1346,9 @@ p {
     min-width: 100%;
     margin: 0;
     height: 75vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .screenshots_container_left,
   .screenshots_container_center,
@@ -1616,6 +1619,21 @@ video {
   }
   .video_playlist_information .video_playlist_information_text {
     font-size: 0.6rem;
+  }
+}
+
+@media (orientation: landscape) {
+  #video_player {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #video_player figcaption {
+    width: 60%;
+  }
+  .video_playlist a img {
+    height: 55% !important;
   }
 }
 
