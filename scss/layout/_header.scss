@@ -191,6 +191,7 @@
 .fa-bars {
   &:before {
     font-family: FontAwesome;
+    color: white;
   }
 }
 .navbar-toggler {
@@ -266,8 +267,9 @@
     z-index: 2;
     left: 0;
     background: url(../images/banner_header.png);
-    background-size: initial;
+    background-size: auto;
     background-repeat: no-repeat;
+    background-position: center 0;
   }
   .header_bottom_logotype {
     width: 100%;
@@ -280,6 +282,7 @@
   .nav-link {
     line-height: 2rem !important;
     padding: 5px;
+    font-style: italic;
     &:hover {
       border-bottom: 1px solid transparent !important;
     }
@@ -341,7 +344,7 @@
   .header_bottom_tittle_android,
   .header_bottom_tittle_ios {
     font-size: 0.7rem;
-    background-size: 15%;
+    background-size: 18%;
     padding: 3px 20px 3px 35px;
     background-position: 5px center;
   }
@@ -371,12 +374,58 @@
   }
   .header_bottom_tittle_android,
   .header_bottom_tittle_ios {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     padding: 10px 10px 10px 20px;
     width: 50%;
   }
   .header_bottom_container_img {
     max-width: 50%;
     right: 20%;
+  }
+}
+@media (max-width: 320px) {
+  .header_bootom_container_text {
+    padding: 0 0 20px 0;
+  }
+  .header_bottom_tittle_text {
+    font-size: 1.5rem;
+  }
+  .navbar-nav {
+    padding: 20px;
+    margin: 0;
+  }
+  .nav-link {
+    display: flex;
+    align-items: center;
+    max-width: 95%;
+  }
+}
+@media (orientation: landscape) {
+  .header_bottom_tittle_btn {
+    flex-direction: row;
+    align-items: center;
+  }
+  .header_bottom_tittle_android {
+    margin-bottom: 0;
+    margin-right: 30px;
+    padding: 5px 30px 5px 45px;
+  }
+  .header_bottom_tittle_ios {
+    padding: 5px 30px 5px 45px;
+  }
+  .header_top {
+    .wrapper {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  .header_top_contact {
+    margin-bottom: 0;
+  }
+  .navbar-nav {
+    flex-direction: row;
+  }
+  .nav-item {
+    width: 33%;
   }
 }

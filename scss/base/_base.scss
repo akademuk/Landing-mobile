@@ -22,7 +22,16 @@ h1 {
     font-weight: 400;
     margin-left: 5px;
   }
+  a {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      color: $white;
+    }
+  }
 }
+
 h2 {
   color: $blackPearl;
   font-family: $Oswald;
