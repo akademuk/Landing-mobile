@@ -2,6 +2,9 @@
   background: $whisper;
   padding: 50px 0 82px;
 }
+video[poster] {
+  object-fit: cover;
+}
 video {
   height: inherit;
   margin-right: 28px;
@@ -19,7 +22,6 @@ video {
   display: flex;
   font-size: 0;
   background: transparent;
-  height: 508px;
   width: 100%;
   margin: 0;
   figcaption {
@@ -29,12 +31,11 @@ video {
     flex-direction: column;
     justify-content: space-between;
     width: 40%;
-    height: auto;
+    overflow: hidden;
     a {
       display: flex;
       padding: 10px;
       text-decoration: none;
-      max-height: 126px;
       margin-bottom: 10px;
       img {
         max-width: 40%;
@@ -55,52 +56,37 @@ video {
 }
 .video_playlist_description {
   width: 100%;
+  padding-left: 30px;
 }
 #video_player figcaption a:hover {
   opacity: 1;
 }
-.video_playlist_description {
-  padding: 10px 30px 0 30px;
-}
+
 .video_playlist_description_tittle {
   color: $white;
   font-family: $Roboto;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  margin: 10px 0 20px;
+  &::after {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: $white;
+    display: block;
+  }
 }
 .video_playlist_description_text {
   color: $white;
   font-family: $Roboto;
   line-height: normal;
-  font-size: 1rem;
+  font-size: 14px;
 }
 .con_video {
   position: relative;
   margin-right: 28px;
   width: 60%;
-  height: auto;
+  height: 100%;
   transition: all 1s ease-in;
-}
-.video_playlist_information {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #004058;
-  opacity: 0;
-  padding: 32px 0 14px 43px;
-  .video_playlist_information_tittle {
-    color: $white;
-    font-family: $Roboto;
-    font-size: 1.2rem;
-  }
-  .video_playlist_information_text {
-    color: $white;
-    font-family: $Roboto;
-    line-height: normal;
-    font-size: 1rem;
-  }
-}
-.con_video {
   cursor: pointer;
   &:hover {
     .video_playlist_information {
@@ -109,13 +95,44 @@ video {
     }
   }
 }
+.video_playlist_information {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #004058;
+  opacity: 0;
+  padding: 32px 0 14px 20px;
+  .video_playlist_information_tittle {
+    color: $white;
+    font-family: $Roboto;
+    font-size: 1.2rem;
+    margin-bottom: 19px;
+    &:after {
+      content: "";
+      width: 30px;
+      height: 1px;
+      background-color: $white;
+      display: block;
+    }
+  }
+  .video_playlist_information_text {
+    color: $white;
+    font-family: $Roboto;
+    line-height: normal;
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 1200px) {
   video {
     height: fit-content;
   }
-  figcaption {
-    height: 70vh;
-    overflow: scroll;
+  #video_player {
+    height: 100%;
+    figcaption {
+      overflow: scroll;
+    }
   }
   .video_container {
     padding: 50px 20px;
@@ -125,6 +142,21 @@ video {
   }
   .video_playlist_description_text {
     font-size: 0.8rem;
+  }
+}
+@media (max-width: 992px) {
+  .video_container {
+    .wrapper {
+      h2 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  video {
+    height: auto;
+  }
+  #video_player {
+    height: auto;
   }
 }
 @media (max-width: 768px) {
@@ -137,40 +169,61 @@ video {
     width: 100%;
   }
   #video_player {
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
     figcaption {
       padding: 10px 0;
-      max-height: 21vh;
       width: 100%;
       overflow-y: scroll;
       overflow-x: inherit;
       a {
-        max-height: 70px;
         padding: 0 10px !important;
         margin-bottom: 15px;
+        align-items: center;
+        img {
+          max-width: 15%;
+          height: auto;
+        }
       }
     }
   }
   .video_playlist {
     a {
-      height: 100px !important;
+      height: inherit;
     }
   }
   .video_playlist_description_tittle {
-    font-size: 1.2rem;
-  }
-  .video_playlist_description_text {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 576px) {
-  .video_playlist_description_tittle {
-    font-size: 0.8rem;
+    font-size: 14px;
+    margin: 0 0 5px;
   }
   .video_playlist_description_text {
     font-size: 0.6rem;
+  }
+  .video_playlist_information_tittle {
+    font-size: 14px !important;
+    margin-bottom: 10px !important;
+  }
+  .video_playlist_information_text {
+    font-size: 0.6rem !important;
+  }
+  .video_playlist_description {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 576px) and (orientation: portrait) {
+  #video_player {
+    flex-direction: column;
+  }
+  figcaption {
+    max-height: 175px;
+    a {
+      img {
+        height: auto !important;
+      }
+    }
+  }
+  .video_playlist {
+    a {
+      height: auto !important;
+    }
   }
   .video_container {
     padding-top: 33px;
@@ -194,15 +247,22 @@ video {
 @media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
   #video_player {
     flex-direction: row;
-    height: 80vh;
+    height: inherit;
     figcaption {
       width: 60%;
-      max-height: 100%;
+      height: auto;
+      a {
+        img {
+          max-width: 30%;
+        }
+      }
     }
+  }
+  .con_video {
+    margin-right: 10px;
   }
   .video_container {
     padding-bottom: 10px;
-    height: 100vh;
     .wrapper {
       h2 {
         margin-bottom: 10px;
@@ -211,18 +271,30 @@ video {
   }
   video {
     margin-bottom: 0;
-    height: 100%;
+    height: inherit;
   }
   video[poster] {
     object-fit: cover;
   }
   .video_playlist {
-    max-height: 60px;
+    max-height: 100px;
     margin-bottom: 10px;
     a {
       img {
-        height: 55% !important;
+        height: inherit;
       }
     }
+  }
+  .video_playlist_description_tittle {
+    font-size: 2vw;
+  }
+  .video_playlist_information_tittle {
+    font-size: 2vw;
+  }
+  .video_playlist_information_text {
+    font-size: 1.5vw;
+  }
+  .video_playlist_description_text {
+    font-size: 1.5vw;
   }
 }
