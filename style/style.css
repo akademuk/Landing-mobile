@@ -2339,7 +2339,7 @@ video {
 }
 
 .pricing_container:hover .pricing_container_price {
-  background: url(../../images/Shape_8.png);
+  background: url(../images/Shape_8.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
