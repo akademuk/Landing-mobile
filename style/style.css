@@ -1140,8 +1140,9 @@ p {
   font-weight: 900;
 }
 
-.music_text_bottom_text p {
+.music_text_bottom_text span {
   margin-top: 15px;
+  display: block;
 }
 
 @media (max-width: 1200px) {
@@ -1854,8 +1855,8 @@ video {
 }
 
 .carousel-item_container img {
-  width: auto;
-  height: auto;
+  width: 120px;
+  height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -53,8 +53,9 @@
   b {
     font-weight: 900;
   }
-  p {
+  span {
     margin-top: 15px;
+    display: block;
   }
 }
 @media (max-width: 1200px) {
