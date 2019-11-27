@@ -92,6 +92,11 @@
     justify-content: space-around;
     margin-top: 20px;
   }
+  .carousel-inner {
+    &::before {
+      top: 20%;
+    }
+  }
 }
 @media (max-width: 992px) {
   .carousel-item_text_block_text {
@@ -99,6 +104,15 @@
   }
   .carousel-item_container {
     padding: 0 20px;
+  }
+  .carousel-inner {
+    &::before {
+      width: 100%;
+      left: inherit;
+    }
+  }
+  .carousel-item_container {
+    width: 95%;
   }
 }
 @media (max-width: 768px) {
@@ -154,37 +168,6 @@
   }
   .carousel-item_text_block {
     margin-top: 0;
-  }
-  .section_carousel {
-    padding-bottom: 50px;
-  }
-}
-@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
-  .carousel-inner {
-    height: 70vh;
-  }
-  .carousel-item_container {
-    img {
-      width: 75px;
-      height: 75px;
-    }
-  }
-  .carousel-item_text_block {
-    margin-top: 0;
-  }
-  .carousel-item_text_block_text {
-    font-size: 0.6rem;
-    margin-bottom: 10px;
-  }
-  .carousel-item_text_block_name {
-    font-size: 0.8rem;
-    margin-bottom: 10px;
-  }
-  .carousel-item_text_block_faunder {
-    font-size: 0.8rem;
-  }
-  .carousel-indicators {
-    bottom: -18%;
   }
   .section_carousel {
     padding-bottom: 50px;
